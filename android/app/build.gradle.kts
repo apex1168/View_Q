@@ -39,6 +39,12 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
+
+    packaging {
+        // Compress native libraries in the download. Android extracts the
+        // selected device ABI during installation; OCR remains fully offline.
+        jniLibs.useLegacyPackaging = true
+    }
 }
 
 kotlin {

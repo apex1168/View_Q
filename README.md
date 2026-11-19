@@ -12,6 +12,47 @@ needed after installation. View Q's code is Apache-2.0.
 
 ## On this Windows computer
 
+### Download builds from GitHub
+
+Open [Android APK builds](https://github.com/apex1168/View_Q/actions/workflows/android-apk.yml),
+select a successful run, and download **View-Q-Android-APKs** from Artifacts
+(GitHub sign-in may be required). Unzip it and use `View-Q-universal.apk` for
+one file covering all supported processors. For a smaller download, use
+`View-Q-arm32.apk` on the Realme C30, `View-Q-arm64.apk` on a 64-bit ARM phone,
+or `View-Q-x86_64.apk` on an x86-64 device.
+
+The workflow builds release mode, but uses a temporary development signing key.
+Those testing builds cannot directly update an installation signed on this
+Windows PC. Use a stable private release signing key before public production
+distribution. The local compressed universal debug APK is now **102.3 MiB**,
+44.3% smaller than before; its bundled offline OCR model is unchanged.
+
+### One APK to share with Android users
+
+Run `.\scripts\build-universal.ps1` in PowerShell to build
+`dist\View-Q-universal.apk`. This single release APK contains 32-bit ARM,
+64-bit ARM and x86-64 code. It requires **Android 7.0 or newer (API 24)**;
+it does not support older Android versions or 32-bit Intel devices.
+It is larger than the Realme-only APK because it includes all three architectures.
+
+Send the APK file to another person. On their Android phone, they can open the
+file, allow **Install unknown apps** for the app opening it when prompted,
+and tap **Install**. They can turn that permission off afterward. No USB
+debugging or developer tools are needed to install the shared file.
+Updates keep the library when installed over an existing copy with the same
+signature. Do not uninstall to update: uninstalling deletes the local library.
+
+This build retains the project's existing development signing key for update
+compatibility. Before a public production launch, configure a private release
+signing key and keep it backed up; that is separate from building a universal
+APK. Compatibility on other devices still needs testing.
+
+If Windows Application Control blocks the release compiler, the supported
+fallback is `.\scripts\build-universal.ps1 -DebugBuild`. It produces
+`dist\View-Q-universal-debug.apk`, a larger development build with the same
+three architectures. It can be shared for testing, but is not a production
+release. This does not require disabling Windows security.
+
 Flutter and Android build tools were downloaded into `.tools` in this workspace.
 Open PowerShell in this folder, then run:
 
@@ -43,8 +84,8 @@ before uninstalling View Q or resetting the phone.
 ## Connect your Realme C30
 
 1. On the phone, open **Settings → About phone** to check the Android version.
-   View Q requires Android **7.0 or newer**. The actual phone version was not
-   detected because ADB found no connected Android device during setup.
+   View Q requires Android **7.0 or newer**. The connected Realme C30 was
+   identified as Android **11**, with a 32-bit ARM processor environment.
 2. Tap **Build number** seven times (it may be under Version). Enter your screen
    lock if asked. This unlocks Developer options.
 3. Open Developer options, usually under System or Additional settings. Turn on

@@ -2,6 +2,7 @@
 .dart_tool/
 .flutter-plugins*
 build/
+dist/
 android/local.properties
 android/.gradle/
 ios/Pods/

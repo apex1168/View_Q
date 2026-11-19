@@ -1,7 +1,7 @@
 name: view_q
 description: A private, offline screenshot library with on-device text search.
 publish_to: none
-version: 1.1.2+4
+version: 1.1.4+4006
 environment:
   sdk: '>=3.14.0 <4.0.0'
   flutter: '>=3.50.0'
