@@ -1,0 +1,34 @@
+[
+  {
+    "fixture": "receipt",
+    "ocrMs": 1526,
+    "wordRecall": 1,
+    "anchorFound": true,
+    "searchMs": 3.009731,
+    "text": "Coffee receipt\nTOTAL INR 240.00\nOrder number K72649"
+  },
+  {
+    "fixture": "dark-message",
+    "ocrMs": 2535,
+    "wordRecall": 1,
+    "anchorFound": true,
+    "searchMs": 2.242731,
+    "text": "Meeting confirmed\nAppointment Friday 11 AM\nReference C92418"
+  },
+  {
+    "fixture": "long-capture",
+    "ocrMs": 3875,
+    "wordRecall": 1,
+    "anchorFound": true,
+    "searchMs": 1.957269,
+    "text": "Travel itinerary\nFlight departure 09 AM\nBooking reference X53827"
+  },
+  {
+    "fixture": "small-text",
+    "ocrMs": 3815,
+    "wordRecall": 1,
+    "anchorFound": true,
+    "searchMs": 2.582346,
+    "text": "Order summary\nDelivery address confirmed\nPayment received successfully\nYour parcel is being prepared\nEstimated arrival Monday morning\nKeep this message for your records\nContact support for order updates\nOrder reference S28463"
+  }
+]
