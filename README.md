@@ -24,8 +24,11 @@ or `View-Q-x86_64.apk` on an x86-64 device.
 The workflow builds release mode, but uses a temporary development signing key.
 Those testing builds cannot directly update an installation signed on this
 Windows PC. Use a stable private release signing key before public production
-distribution. The local compressed universal debug APK is now **102.3 MiB**,
-44.3% smaller than before; its bundled offline OCR model is unchanged.
+distribution. The verified release-mode APK is **45.7 MB** (43.6 MiB),
+**76.3% smaller** than the original universal debug APK. The Realme C30
+ARM32 build is **23.8 MB** (22.7 MiB). The locally downloaded copies in
+`dist` have been signed with this PC's existing key for update compatibility.
+The bundled offline OCR model is unchanged.
 
 ### One APK to share with Android users
 
