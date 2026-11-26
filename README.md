@@ -1,24 +1,16 @@
 # View Q
 
-**Find any saved screenshot by the words inside it.**
+**Find saved screenshots by the words inside them.**
 
-Save a screenshot of an address, receipt, or chat. When you need it again, search
-for a word you remember. View Q reads English text offline and keeps your
-screenshots and search data on your device.
+## [Download for Android](https://view-q-android-download.vercel.app/View-Q.apk)
 
-[**⬇ Download View Q for Android (.apk)**](https://view-q-android-download.vercel.app/View-Q.apk)
+**Android 7.0 or newer · No sign-in · No ZIP**
 
-Free and open source · Android 7.0 or newer · No sign-in or ZIP extraction
+1. Tap **Download for Android** on your phone.
+2. Open **View-Q.apk** from **Downloads** and tap **Install**. If prompted, allow **Install unknown apps** for the app opening the file.
 
-## Install on Android
-
-1. On your phone, tap the download link above. It downloads one APK for all supported processors.
-2. Open **View-Q.apk** from **Downloads**. If Android asks, allow **Install unknown apps** for the app opening the file.
-3. Tap **Install**, then **Open**. You can turn the installation permission off afterward.
-
-This is a test build. For an update, install over your existing copy if the signing
-keys match. If Android rejects the update, export your library before uninstalling.
-Uninstalling deletes saved data. See [build and signing details](docs/UNIVERSAL_APK.md).
+This is a test build. If Android rejects an update, export your library before
+uninstalling. Uninstalling deletes saved data. See [build and signing details](docs/UNIVERSAL_APK.md).
 
 ## Save and find screenshots
 
