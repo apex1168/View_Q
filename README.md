@@ -1,51 +1,33 @@
 # View Q
 
-**Save a screenshot. Find it later by the words inside it.**
+**Find any saved screenshot by the words inside it.**
 
-View Q is a private screenshot library with offline English text recognition
-and search. No account, cloud service or internet connection is needed to use it.
+Save a screenshot of an address, receipt, or chat. When you need it again, search
+for a word you remember. View Q reads English text offline and keeps your
+screenshots and search data on your device.
 
-## Download for Android
+[**⬇ Download View Q for Android (.apk)**](https://view-q-android-download.vercel.app/View-Q.apk)
 
-[Download the Android APKs](https://github.com/apex1168/View_Q/actions/runs/44547803858)
-
-1. Open the link above and sign in to GitHub if asked.
-2. Under **Artifacts**, download **View-Q-Android-APKs** and unzip the file.
-3. Choose an APK from the table below.
-
-| APK | Choose this for | Approximate download |
-| --- | --- | ---: |
-| `View-Q-universal.apk` | One file for all supported processors | 46 MB |
-| `View-Q-arm32.apk` | Realme C30 and other 32-bit ARM phones | 24 MB |
-| `View-Q-arm64.apk` | 64-bit ARM phones | 25 MB |
-| `View-Q-x86_64.apk` | Devices with x86-64 processors | 25 MB |
-
-Requires **Android 7.0 or newer**. If you are unsure which processor your phone
-uses, choose the universal APK. Older Android versions and 32-bit Intel devices
-are not supported.
+Free and open source · Android 7.0 or newer · No sign-in or ZIP extraction
 
 ## Install on Android
 
-1. Open the APK on your phone from **Files** or **Downloads**.
-2. If prompted, allow **Install unknown apps** for the app opening the file.
+1. On your phone, tap the download link above. It downloads one APK for all supported processors.
+2. Open **View-Q.apk** from **Downloads**. If Android asks, allow **Install unknown apps** for the app opening the file.
 3. Tap **Install**, then **Open**. You can turn the installation permission off afterward.
 
-**You do not need a computer, USB debugging, or Developer options.**
-
-These are testing builds. To update, install over the existing app when its
-signing key matches. If Android rejects an update, keep the existing app and
-export your library before taking further steps. Uninstalling deletes saved data.
-See [build and signing details](docs/UNIVERSAL_APK.md).
+This is a test build. For an update, install over your existing copy if the signing
+keys match. If Android rejects the update, export your library before uninstalling.
+Uninstalling deletes saved data. See [build and signing details](docs/UNIVERSAL_APK.md).
 
 ## Save and find screenshots
 
-- In your gallery, open a screenshot, tap **Share**, and choose **View Q**.
-- Or open View Q and tap **Save screenshot** to choose an image.
-- After the text is read, search for a word from the screenshot.
-- Open a result to view the image, its summary, and the full extracted text.
+1. Open a screenshot in your gallery, tap **Share**, and choose **View Q**. You can also tap **Save screenshot** inside View Q.
+2. Once View Q reads the image, search for a word from the screenshot.
+3. Tap a result to see the screenshot and its extracted text.
 
-View Q keeps its own copy, so saved images remain available if you delete the
-gallery originals. Screenshots and recognized text stay on your device.
+View Q keeps its own copy, so you can still find a saved screenshot after deleting
+the gallery original. Search works offline.
 
 ## Back up your library
 
